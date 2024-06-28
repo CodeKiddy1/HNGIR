@@ -1,0 +1,84 @@
+sudo cat <<EOF | sudo tee /var/www/html/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0; /* Light gray background */
+        color: #333; /* Dark gray text */
+        text-align: center; /* Center align text */
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto; /* Center align container */
+        background-color: #fff; /* White container background */
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    }
+    h1 {
+        color: #333; /* Dark gray heading */
+    }
+    h2 {
+        color: #666; /* Medium gray subheading */
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        text-align: left;
+        font-weight: bold;
+    }
+    .data {
+        margin-bottom: 20px;
+        padding: 8px;
+        border: 1px solid #ccc; /* Light gray border */
+        border-radius: 4px;
+        background-color: #f9f9f9; /* Light gray background for data */
+        text-align: left;
+    }
+    .data span {
+        font-weight: normal;
+        color: #666; /* Medium gray text */
+    }
+    a {
+        color: #007bff; /* Blue hyperlink color */
+        text-decoration: none; /* Remove underline */
+    }
+    a:hover {
+        text-decoration: underline; /* Underline on hover */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Profile</h1>
+        <div class="data">
+            <label>Name:</label>
+            <span>Vision Olufeagba</span>
+        </div>
+
+        <div class="data">
+            <label>Username:</label>
+            <span>Simply_Vision</span>
+        </div>
+
+        <div class="data">
+            <label>Email:</label>
+            <span>visiongideon@gmail.com</span>
+        </div>
+
+        <div class="data">
+            <label>About Me:</label>
+            <p>I'm excited to participate in the HNG Internship program.</p>
+            <p>You can learn more about HNG Internship on their website: <a href="https://hng.tech" target="_blank">HNG.tech</a></p>
+        </div>
+    </div>
+</body>
+</html>
+EOF
+
